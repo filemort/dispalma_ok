@@ -22,26 +22,26 @@
 
 .fondo{
     grid-area: fondo;
-    width: 100%;
+    width: 100vw;
     height: 40vw;
     opacity: .4;
 }
 .cabecera{
     grid-area: cabecera;
     color: black;
-    margin-top: -23vw;
     z-index: 0;
 
 }
 .headTitle{
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3.5vw;
     font-weight: bold;
     margin-bottom: 1vw;
+    margin-top: -19vw;
 }
 .headSubt1{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bold;
     margin-bottom: 1vw;
 }
@@ -64,6 +64,7 @@
 }
 .mtto{
     grid-area: mtto;
+    text-align: center;
 }    
 .ord{
     grid-area: ord;
@@ -91,20 +92,21 @@
     margin-bottom: 1vw;
 }
 .txtArti{
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-weight: bold;
 }
 .txtSubArti{
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-top: 1vw;
-    width: 30vw;
+    width: 25vw;
+    margin-left: 4vw;
     padding-bottom: 4vw;
 }
 #miPie{
     margin-top: -4vw;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 300px){
     .selector{
         grid-template-areas: 
         "mtto"
