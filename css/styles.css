@@ -102,4 +102,20 @@
     margin-top: -4vw;
 }
 
+@media (max-width: 600px){
+    .selector{
+        grid-template-areas: 
+        "mtto"
+        "ord"
+        "redes"
+        "impre"
+        "audio"
+        "oficina";
+    }      
+    .txtSubArti{
+        margin-left: 34vw;
+        
+    }             
+}
+
 
