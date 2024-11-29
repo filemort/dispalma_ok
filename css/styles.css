@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+.fondo{
+    width: 100%;
+    height: 40vw;
+    opacity: .4;
+}
+.contenedor{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+        "fondo"
+        "cabecera"
+        "selector";
+    grid-column: 1fr;
+    margin-bottom: 4vw;   
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.cabecera{
+    grid-area: cabecera;
+    color: black;
+    margin-top: -22vw;
+    z-index: 0;
+
+}
+.headTitle{
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+.headSubt1{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+.headSubt2{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+
+}
+.selector{
+    grid-area: selector;
+    display: grid;
+    grid-template-areas: 
+      "mtto  ord   redes"
+      "impre audio oficina";
+    grid-column: 1fr 1fr 1fr;  
+    width: 100%;  
+    text-align: center;
+
+}
+.mtto{
+    grid-area: mtto;
+}    
+.ord{
+    grid-area: ord;
+}
+.red{
+    grid-area: redes;
+
+}
+.impre{
+    grid-area: impre;
+}
+.audio{
+    grid-area: audio;
+}
+.oficina{
+    grid-area: oficina;
+    
+}
+.mttoImg, .ordImg, .redImg, .impImg, .audImg, .ofcImg{
+    width: 25vw;
+    height: 15vw;
+    border-radius: 5rem;
+    border: .2rem solid blue;
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+}
+.txtArti{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.txtSubArti{
+    font-size: 1vw;
+    margin-top: 1vw;
+    width: 30vw;
+    padding-bottom: 4vw;
+    
+}
+#miPie{
+    margin-top: -4vw;
+}
+
+

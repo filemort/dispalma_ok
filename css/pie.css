@@ -1,0 +1,113 @@
+.foot-container{
+    display: grid;
+    grid-template-areas: 
+        "fsrv fctc fsrc"
+        "raya raya raya"
+        "dclm dclm dclm";
+    width: 100%;
+    padding: 1vw;
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+.fsrv{
+    grid-area: fsrv;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.fctc{
+    grid-area: fctc;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.fscr{
+    grid-area: fsrc;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.dclm{
+    grid-area: dclm;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.raya{
+    grid-area: raya;
+    width: 100%;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 15vw;
+}
+.dpmTxt{
+    text-align: center;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.footSrv{
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-top: 2vw; ;
+}
+.footTxt{
+    font-size: 1.2vw;
+}
+.fts{
+    color: black;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+.fts:hover{
+    color: black;
+    font-weight: bold;
+}
+.fts:active{
+    color:#5499c7;
+}
+.fts1{
+    color:black;
+    font-size: .8vw;
+}
+#nombre:hover{
+    background-color:lemonchiffon;
+}
+#correo:hover{
+    background-color:lemonchiffon;
+}
+#envio{
+    margin-top: 1vw;
+    width: 10vw;
+    margin-left: 9vw;
+    border-bottom: #5499c7;
+    box-shadow: 5vw 5vw 15vw rgba(0, 0, 0, 6vw)
+}
+#envio:hover{
+    color: red;
+    font-weight: bold;
+}
+
+  /* Estilo para el contenedor del banner */
+  .banner-lateral {
+    border-radius: 8vw 0 0 vwpx; /* Bordes redondeados en el lado izquierdo */
+    width: 18vw;
+    font-size: .8vw;
+    margin-top: 1.5vw;
+    margin-left: 8vw;
+}
+
+/* Estilo del botón */
+.banner-lateral a {
+    text-decoration: none;
+}
+
+
+
+

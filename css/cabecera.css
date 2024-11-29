@@ -1,0 +1,97 @@
+.conten_1_2{ /* GRID: contenedor general */
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    grid-template-areas: 
+        "conten_1"
+        "separa"
+        "conten_2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); 
+}
+.conten_1{ /* GRID-Item: comprende telefono, mail y menú sobre nosotros */
+    grid-area: conten_1;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.phoneMail{ /*FLEX: comprende telefono y mail */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 22vw;
+}
+.cab_Nav{  /*FLEX: comprende menú sobre nosotros */
+    display: flex;
+    flex-wrap: wrap;
+    width: 35vw;
+    margin-left: 39vw;
+    font-size: 1.3vw;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.phoneIcoImg{
+    width: 1.5vw;
+}
+.phoneIcoTxt{
+    font-size: 1.3vw;
+    color: lightseagreen;
+}
+.emalIcoImg{
+    width: 1.5vw;
+}
+.emailIcoTxt{
+    font-size: 1.3vw;
+    color: lightseagreen;
+}
+.emailIcoTxt:hover{
+    background-color: brown;
+    color: white;
+}
+
+.separa{  /* GRID-Item: barra de separación */ 
+    grid-area: separa; 
+    margin-bottom: .5rem;  
+}
+
+.conten_2{ /* GRID-Item: comprende logo y menu general de opciones */
+    grid-area: conten_2;
+    display: flex; /* FLEX: pone en horizontal el logo y menú */
+    flex-wrap: wrap;
+    align-items: center;
+}
+.imgLogo{
+    width: 10vw;
+    border-radius: 1rem;
+    padding-bottom: 0.2rem;
+}
+.menuGral{
+    display: flex; /* FLEX: comprende las opciones del menú */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; 
+    margin-left: 21vw;
+    width: 65vw;
+    font-size: 1.5vw;
+}
+
+.mgTxt:hover{
+    background-color: brown;
+    color: white;
+}
+.mgCnav{
+    color: lightseagreen;
+}
+.mgCnav:hover{
+    background-color: brown;
+    color: white;
+
+}
+
+
+
