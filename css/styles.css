@@ -9,149 +9,74 @@
 .contenedor{
     position: relative;
     display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-areas: 
-        "fondo"
-        "cabecera"
-        "selector";
-    grid-column: 1fr;
-    margin-bottom: 4vw;   
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    grid-template-columns: 1fr;
+
 }
 
 .fondo{
-    grid-area: fondo;
     width: 100%;
-    height: 40vw;
+    height: 40rem;
     opacity: .4;
 }
+.dos{
+    margin-top: -25rem;
+}
 .cabecera{
-    grid-area: cabecera;
     color: black;
-    z-index: 0;
-
 }
 .headTitle{
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 3.5rem;
     font-weight: bold;
-    margin-bottom: 1vw;
-    margin-top: -19vw;
 }
 .headSubt1{
+    margin-top: 1.5rem;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 1vw;
+    margin-bottom: 1rem;
 }
 .headSubt2{
+    margin-top: 1rem;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.5rem;
     font-weight: bold;
-
 }
 .selector{
-    grid-area: selector;
     display: grid;
-    grid-template-areas: 
-      "mtto  ord   redes"
-      "impre audio oficina";
-    grid-column: 1fr 1fr 1fr;  
-    width: 100%;  
-    text-align: center;
+    grid-template-columns: 
+        repeat(auto-fill, minmax(300px, 1fr));
+    gap: 7rem;
+    margin-top: 12rem;
+    margin-bottom: 15rem;
+}
 
-}
-.mtto{
-    grid-area: mtto;
-    text-align: center;
-}    
-.ord{
-    grid-area: ord;
-}
-.red{
-    grid-area: redes;
 
-}
-.impre{
-    grid-area: impre;
-}
-.audio{
-    grid-area: audio;
-}
-.oficina{
-    grid-area: oficina;
-    
-}
 .mttoImg, .ordImg, .redImg, .impImg, .audImg, .ofcImg{
-    width: 25vw;
-    height: 15vw;
+    width: 25rem;
+    height: 15rem;
     border-radius: 5rem;
     border: .2rem solid blue;
-    margin-top: 5vw;
-    margin-bottom: 1vw;
+}
+
+.mttoImgTxt, .ordImgTxt, .redImgTxt, .impImgTxt, .audImgTxt, .ofcImgTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .txtArti{
-    font-size: 1.8vw;
+    font-size: 1.8rem;
     font-weight: bold;
+    margin-top: .5rem;
 }
 .txtSubArti{
-    font-size: 1.5vw;
-    margin-top: 1vw;
-    width: 25vw;
-    margin-left: 4vw;
-    padding-bottom: 4vw;
+    margin-top: .5rem;
+    font-size: 1rem;
 }
 #miPie{
-    margin-top: -4vw;
+    margin-top: -12rem;
 }
 
-@media screen and (max-width: 300px){
-    .selector{
-        grid-template-areas: 
-        "mtto"
-        "ord"
-        "redes"
-        "impre"
-        "audio"
-        "oficina";
-    }      
-    .txtSubArti{
-        margin-left: 10.8rem;
-    }
-    .fondo{
-        height: 100%;
-    }
-    .cabecera{
-        margin-top: -13rem;
-    }       
-    .headTitle{
-        font-size: 3rem;
-    }
-    .headSubt1{
-        font-size: 1.4rem;
-
-    }
-    .headSubt2{
-        font-size: .9rem;
-    }    
-    .mttoImg, .ordImg, .redImg, .impImg, .audImg, .ofcImg{
-        width: 20rem;
-        height: 15rem;
-        margin-top: 3.5rem;
-        margin-bottom: 1rem;
-    }  
-    .txtArti{
-        font-size: 1.5rem;
-    }
-    .txtSubArti{
-        font-size: 1rem;
-        width: 15rem;
-        margin-left: 8rem;
-    }
-    #miPie{
-        margin-top: -1.7rem;
-    }
-}
 
 
