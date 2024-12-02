@@ -1,85 +1,77 @@
-.conten_1_2{ /* GRID: contenedor general */
+.conten_1_2{
     position: fixed;
-    z-index: 1;
-    display: grid;
-    grid-template-areas: 
-        "conten_1"
-        "separa"
-        "conten_2";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    width: 100%;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); 
+    z-index: 1;
+    width: 100%;
 }
-.conten_1{ /* GRID-Item: comprende telefono, mail y menú sobre nosotros */
-    grid-area: conten_1;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+.conten_1{ 
+    border: 2px solid;
     display: flex;
-    flex-wrap: wrap;
-}
-.phoneMail{ /*FLEX: comprende telefono y mail */
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    width: 22vw;
 }
-.cab_Nav{  /*FLEX: comprende menú sobre nosotros */
+.cPhone{
+    border: 2px solid;
     display: flex;
-    flex-wrap: wrap;
-    width: 35vw;
-    margin-left: 39vw;
-    font-size: 1.3vw;
-    justify-content: space-evenly;
-    align-items: center;
-   
+    width: 15rem;
 }
 .phoneIcoImg{
-    width: 1.5vw;
+    width: 1.5rem;
+    margin-left: .8rem;
+    margin-right: .8rem;
 }
 .phoneIcoTxt{
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     color: lightseagreen;
+}
+.cMail{
+    border: 2px solid;
+    display: flex;
+    width: 15rem;
 }
 .emalIcoImg{
-    width: 1.5vw;
+    margin-left: .8rem;
+    width: 1.5rem;
+    margin-right: .8rem;
 }
 .emailIcoTxt{
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     color: lightseagreen;
+}
+.cabNav{
+    display: flex;
+    margin-left: 30rem;
+    width: 40rem;
+    justify-content: space-evenly;
+    border: 2px solid;
+    font-size: 1.3rem;
+}
+.conten_2{ 
+    border: 2px solid red;
+    display: flex;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); 
+    align-items: center;
+    width: 100%;
+}
+.imgLogo{
+    display: flex;
+    width: 8rem;
+    border-radius: 1rem;
+    padding-top: .2rem;
+    padding-bottom: 0.2rem;
+}
+.menuGral{
+    border: 2px solid;
+    display: flex; /* FLEX: comprende las opciones del menú */
+    margin-left: 23rem;
+    width: 64rem;
+    justify-content: space-evenly;
+    align-items: center; 
+    font-size: 1.5rem;
 }
 .emailIcoTxt:hover{
     background-color: brown;
     color: white;
 }
-
-.separa{  /* GRID-Item: barra de separación */ 
-    grid-area: separa; 
-    margin-bottom: .5rem;  
-}
-
-.conten_2{ /* GRID-Item: comprende logo y menu general de opciones */
-    grid-area: conten_2;
-    display: flex; /* FLEX: pone en horizontal el logo y menú */
-    flex-wrap: wrap;
-    align-items: center;
-}
-.imgLogo{
-    width: 10vw;
-    border-radius: 1rem;
-    padding-bottom: 0.2rem;
-}
-.menuGral{
-    display: flex; /* FLEX: comprende las opciones del menú */
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center; 
-    margin-left: 21vw;
-    width: 65vw;
-    font-size: 1.5vw;
-}
-
 .mgTxt:hover{
     background-color: brown;
     color: white;
@@ -92,6 +84,48 @@
     color: white;
 
 }
+@media (width < 600px) {
+    .conten_1{
+        display:grid;
+        grid-template-areas: 
+            "cPhone cMail"
+            "cabNav cabNav";
+    }
+    .cPhone{
+        grid-area: cPhone;
+        width: 13rem;
+    }
+    .cMail{
+        grid-area: cMail;
+        margin-left: -30rem;
+        width: 14rem;
+    }
+    .cabNav{
+        grid-area: cabNav;
+        margin-left: -15rem;
+    
+    }
+    .conten_2{ 
+        display: grid;
+        grid-template-areas: 
+            "imgLogo menuGral";
+        background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); 
+    }
+    .imgLogo{
+        border: 1px solid;
+        margin-left: .5rem;  
+    }    
 
+    .menuGral{
+        grid-area: menuGral;
+        display: flex;
+        flex-direction: column;
+        margin-left: -1rem;
+        width: 18rem;
+        align-items:flex-start  
+    }
+        
+    }
+}
 
 
